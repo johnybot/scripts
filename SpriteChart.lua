@@ -10,14 +10,14 @@ end
 
 spritesOnLine = {}
 overflowColors = {
-  0x88000088,
-  0x880000FF,
-  0x880088FF,
-  0x8800FF88,
-  0x8800FF00,
-  0x8888FF00,
-  0x88FF8800,
-  0x88FF0000,
+  0x44388E3C,
+  0x44689F38,
+  0x44AFB42B,
+  0x44FBC02D,
+  0x44FFA000,
+  0x44F57C00,
+  0x44E64A19,
+  0x44D32F2F,
   0x00FF0000
 }
 
@@ -42,7 +42,7 @@ function Main()
         emu.drawRectangle(spriteX, spriteY + i, 8, 1, overflowColors[math.min(spritesOnLine[spriteY + i], 9) - 0], true)
       end
 
-      emu.drawRectangle(spriteX, spriteY, 8, 8, 0x88888888, false)
+      emu.drawRectangle(spriteX, spriteY, 8, 8, 0xAA888888, false)
     end
   end
   -- Draw chart background

@@ -11,7 +11,7 @@ if consoleType ~= "Nes" then
 end
 
 -- Should be a power of 2
-numberOfRecords = 64
+numberOfRecords = 128
 -- Height of the chart
 height = 50
 chartColors = {
