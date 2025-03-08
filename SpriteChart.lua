@@ -39,9 +39,11 @@ function Main()
     if spriteY < 240 then
       for i = 0, (height - 1 ) do
         spritesOnLine[spriteY + i] = spritesOnLine[spriteY + i] + 1
+        -- Draw over the sprite
         emu.drawRectangle(spriteX, spriteY + i, 8, 1, overflowColors[math.min(spritesOnLine[spriteY + i], 9) - 0], true)
       end
-
+	  
+	  -- Sprite outline
       emu.drawRectangle(spriteX, spriteY, 8, 8, 0xAA888888, false)
     end
   end

@@ -13,7 +13,7 @@ end
 -- Should be a power of 2
 numberOfRecords = 128
 -- Height of the chart
-height = 50
+height = 60
 chartColors = {
   0x44388E3C,
   0x44388E3C,
