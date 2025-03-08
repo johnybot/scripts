@@ -13,3 +13,11 @@ Charts sprite usage per scanline
 vblank.lua:
 Charts vblank utilization
 ![guild_quest_071](https://github.com/user-attachments/assets/641916de-4022-47c1-ba33-c4fe14dd4a0e)
+
+irqCallback.lua
+Draws a horizontal line on the scanline an IRQ occurs
+![Guild_Quest_II_011](https://github.com/user-attachments/assets/68ca4c83-bc75-4064-9f11-667a9783fbab)
+
+safeArea.lua
+Draws the Safe Area overlaid on top of the screen
+![guild_quest_134](https://github.com/user-attachments/assets/1c9bf750-4142-4d9f-993d-5f39ed3aa923)
