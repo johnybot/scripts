@@ -65,4 +65,4 @@ function Main()
 end
 
 emu.addEventCallback(Main, emu.eventType.startFrame)
-emu.displayMessage("Script", "Sprite Count Checker")
+emu.displayMessage("Script", "Sprite Chart")

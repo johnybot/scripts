@@ -4,6 +4,7 @@
 -- This script gives a histogram of the vblank time utilization.
 -- It also provides a utilization average and a count of lag frames
 -- I find this useful to visualize how much of vblank you are using each frame
+
 local consoleType = emu.getState()["consoleType"]
 if consoleType ~= "Nes" then
   emu.displayMessage("Script", "This script only works on the NES.")
@@ -13,7 +14,7 @@ end
 -- Should be a power of 2
 numberOfRecords = 128
 -- Height of the chart
-height = 60
+height = 40
 chartColors = {
   0x44388E3C,
   0x44388E3C,
@@ -104,6 +105,8 @@ function frameCallback()
   ppuCycleCount = nil
   nmiStartedCycle = nil
 end
+
 emu.addMemoryCallback(ppuScrollCallback, emu.callbackType.write, 0x2005)
 emu.addEventCallback(nmiCallback, emu.eventType.nmi)
 emu.addEventCallback(frameCallback, emu.eventType.startFrame)
+emu.displayMessage("Script", "vblank")

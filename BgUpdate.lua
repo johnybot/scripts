@@ -83,4 +83,5 @@ emu.addMemoryCallback(writeCallback, emu.callbackType.write, 0x2007)
 emu.addMemoryCallback(ppuScrollCallback, emu.callbackType.write, 0x2005)
 emu.addMemoryCallback(ppuControlCallback, emu.callbackType.write, 0x2000)
 emu.addEventCallback(eventCallback, emu.eventType.startFrame)
-emu.displayMessage("Script", "Sprite Count Checker")
+
+emu.displayMessage("Script", "BgUpdate")
